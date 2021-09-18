@@ -1,0 +1,5 @@
+fp=open("sh.data","a")
+fp.write("\n shivam sharma")
+fp.write("\n OIST")
+fp.write("\n 0105CA193D53")
+print("write data succsefully.........")

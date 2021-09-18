@@ -1,0 +1,10 @@
+first, *rest = input().split()
+print(first)
+print(*rest)
+print(type(first))
+print(type(rest))
+'''
+given_ input = hello my name is bob
+hello
+['my', 'name', 'is', 'bob']
+'''

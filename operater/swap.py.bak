@@ -1,0 +1,16 @@
+#swap.py
+a=int(inpu("enter first number:"))
+b=int(inpu("enter second number:"))
+print("="*40)
+print("before swapping")
+print("="*40)
+print("First number is={}".format(a))
+print("second number is={}".format(b))
+print("="*40)
+a,b=b,a
+print("="*40)
+print("after swapping")
+print("="*40)
+print("First number is={}".format(a))
+print("second number is={}".format(b))
+print("="*40)

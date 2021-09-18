@@ -1,0 +1,175 @@
+Python Course:
+--------------------
+Coding---Program---------- zero talent--------- professional
+To learn this python course----- C    CPP     JAVA---- 
+--------------------------------------------------------------------
+In real Time ---Applications we can develp in python lang
+-----------------------------------------------------------------------
+1. Web Application Development
+------------------------------------------
+Java------ 1) Servlets   2) JSP   3) Spring  4) JSF
+.Net-----------ASP.net
+Python------------Web Frame Works
+				1) DJango, Pyramid---( Big web applications)
+				2) bottle, flask-----(Micro web applications)
+				3) plone, Django CMS( Nano-----
+---------------------------------------------------------------------
+2) GUI Application Development
+---------------------------------------------------------------------
+	tkinteR
+---------------------------------------------------------------------
+3) Console based Applications:
+----------------------------------------------------------------------
+REPL----Read-Eval--Print-Loop
+Files-----io--Pickling / un-pickling
+--------------------------------------------
+4) Software Development Building Tools
+---------------------------------------------------
+OS-------    Release---Organization---- 
+ICICI----
+------------------------------------------------------
+5) Business Aplications
+------------------------------
+1) Business Applications
+---------------------------------
+     a) ERP Applications
+     b) E-commerce Applications
+---------------------------------
+2) Standard Applications:
+---------------------------------
+      MS--Office
+      GC
+      IE
+      MOzilla
+--------------------------------------------------------------------
+6) Data Science Applications / AI -- Machine Learning
+--------------------------------------------------------------------
+	numpy
+	pandas
+-------------------------------------------------------
+7) Scientific Application Devlopement
+------------------------------------------------
+scipy
+-------
+NASA-----ISRO
+NSA------
+FBI------
+CIA---
+DIA----
+-----------------------------------------------
+8) Audio-video applications 
+------------------------------------------------
+gstreamer-----
+9) Image processing Applications
+--------------------------------------------
+---------------------------------------------
+10) 3D-CAD applications development
+-----------------------------------------------
+
+================================================================================
+Features of Python lang
+===============================================================================
+=>Features of a lang are nothing but services / facilities provided by lang Developers in the lang, which are used by Lang programmers for devgeloping real time applications.
+
+1. Simple and Easy to Learn
+1.5--Freeware and Open Source
+2. Dynamically Programming Lang
+3. Platform Independent lang
+4. Portable 
+5. Interpreted Programming Lang
+6. High Level Programming Lang
+7. Procedural (Functional) and Object Oriented Programming Lang
+8. Robust(Strong)
+9. Extensible 
+10. Embedded 
+11. Supports Third Party APIs( scikit, scipy, numpy, matplot lib etc)
+---------------------------------------------------------------------------------------
+Python lang Inspired From:
+-----------------------------------------------------------
+1) Functional Programming from  C
+2) Object Oriented Principles from  CPP
+3) Scripting Programming   from PERL 
+4) Modular Programming Lang From Modulo3
+------------------------------------------------------------
+
+
+================================================================
+	Reading the data from Key board in Python
+================================================================
+=>To Read the data from key board, In python two approaches / functions.They are
+		1) input()
+		2) input(msg)
+----------------------------------------------------------------
+1) input():
+---------------
+=>This function is used for reading the data from Key board in the form str type.
+Syntax:-     varname= input()
+Example:-   print("Enter a radious");
+                   v=input()
+		   r=float(v)
+		    (OR)
+		   r=float( input() )
+--------------------------------------------------------------------------------------------
+2) input(msg):
+--------------------
+=>This function is used for reading the data from Key board in the form str type by
+prompting user message.
+=>the parameter 'msg' represents User Prompting Message
+Syntax:-  varname= input("User Prompting Message");
+
+  Example:    v=input("Enter Radious:")
+                     print("Type of v=", type(v)) ------ <class, 'str'>
+		     r=float(v)
+		     print("Type of r=", type(r)) ------ <class, 'float'>
+		          (OR)
+                    r= float( input("Enter Radious: ") )
+
+
+
+====================================================================================
+		Operators in Python
+====================================================================================
+=>Operator is one symbol, which is used to perform some operation on the data.
+=>If one or more variables connected with operator(s) then it is called Expression
+Example:-		>>>a=10
+				>>>b=20
+				>>>c=a+b
+                     here '+' is called operator (symbol)
+		    'a+b' is called expression bcoz it is connected with operator +
+-----------------------------------------------------------------------------------------------
+In Python Programming, we have 8 set of operators. They are
+1. Arithmetic Operators
+2. Assignment Operator
+3. Relational Operators
+4. Logical Operators
+5. Bitwise Operators
+6. Membership Operators
+7. Identity Operators
+8. Shorthand Operators
+
+==============================================================================
+		1. Arithmetic Operators:
+==============================================================================
+=>These operators are used for performing Arithmetic Operations such as addition, substraction, multiplication...etc. We have seven Arithmetic Operators given in the following table.
+----------------------------------------------------------------------------------------------------------
+operator             Meaning		    Example (a=10,b=3)               Result
+----------------------------------------------------------------------------------------------------------
+    +		   Addition Operator		a+b				13
+    
+    -		   Substraction Operator         a-b				 7
+    
+    *		  multiplication operator	 a*b				30
+
+    /		  Division Operator	gives 	 a/b				3.333		
+                  Quotient in decimal places
+
+   //             Integer Division gives	 a//b				3
+		  Quotient in integer form
+
+   %		  Modulo Division Operator       a%b				1
+                  (Gives Remainder)
+
+   **             Exponent Operator.		 a**b				1000
+		  calculates exponential
+		  power values
+   =================================================================================

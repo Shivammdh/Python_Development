@@ -1,0 +1,252 @@
+
+		INDEX OF EXCEPTION HANDLING
+============================================================================
+INDEX
+----------
+=>Purpose / Aim
+=>Exception
+=>Exception Handling
+=>Types of Errors:
+		i) Compile Time Errors
+		ii) Logical Erros
+		iii) Runtime Errors
+=>Dealing with errors
+=> Exception List / classes
+=>Types of Exceptions:
+		i) Pre-defined / Built-in exceptions
+		ii) programmer-defined exceptions.
+=>Syntax for exception hanlding
+=>Keywords required for handling exceptions;
+		i) try
+		ii)except
+		iii) else
+		iv) finally
+		v) raise
+=>Programming Excercise.
+
+============================================================================
+
+
+Exception handling
+==============================================================
+=>The aim of exception handling topic is that to develop "Robust(Strong)" applications/ projects.
+=>In Real Time, To develop any project, we use lang / tech and by using the lang/' tech, we develop, compile and run  Various programs. During this development process,we get 3 types of errors. they are
+		1) Compile Time Errors
+		2) Logical Error
+		3) Runtime Errors
+---------------------------------------------------------------------------------------------------------------------
+1) Compile Time Errors:
+------------------------------------
+=>These errors occuring during compilation Process / compile time(.py----->.pyc)
+=>These errors due to syntaxes are not followed by programmer (poor knowledge of sub)
+=>These errors are solved by programmer during Devlopment Time.
+
+Example:   SyntaxError: EOL while scanning string literal
+-------------------------------------------------------------------------------------------------------------
+2) Logical Errors:
+------------------------------------
+=>These errors occuring during execution of the program
+=>These errors due to wrong representation logics and we get Wrong Results.
+=>These errors are solved by programmers during Devlopment Time.
+-----------------------------------------------------------------------------------------------------------
+3) Runtime Error:
+----------------------------
+=>These errors occuring during execution of the program at implementation level
+=>These errors due to wrong / invalid input entered by Application / end users
+=>These errors Must be ADDRESED BY PROGRAMMERS WITH THIER FORECASTING KNOWLEDEGE for generating User-friendly Error Message by making use of exception Handling Topic
+==============================================================
+Points to be remembered in Exception handling:
+----------------------------------------------------------------------------
+1) When the application user / end user enters invalid / wrong input to the program /		project  then we get Runtime Error / exception
+
+2)Def. of  Exception :-  Runtime error of any program is called exception
+     (Invalid Input----->Runtime Error---->Exception )
+3)Every Runtime Error / Exception by default generates Technical / System error			Messages, which are understandable by programmers but not Applications Users. Industry is recommended to convert Technical Error Messages into user-friendly error messages by making use "Exception Handling" concept.
+
+4) When the exception occurs in the python program, 3 steps takes place internally. they are.
+		a) PVM abnormally terminates the program execution
+		b) PVM comes out of Program abnormally
+		c) PVM automatically generates technocal Error Message.
+
+5) Def of Exception Handling:- The process of converting technical Error Messages into User-freindly Error Messages is known as Exception Handling.
+----------------------------------------------------------------------------------------------------------------------------------
+6) If an exception occurs in python program, PVM creates an object appropriate exception      class for performing  (a) (b) and (c) of 4th point.  
+7) Hence every exception is one of the object.
+
+     Invalid input---------------->exception------->PVM creates an object of appr. exception class.
+----------------------------------------------------------------------------------------------------------------------------------
+Types of exceptions:
+================================
+=>In python Programming, we have two types of exceptions. They are.
+		1) Pre-defined / Built-in exceptions
+		2) Programmer / User / Custom defined Exceptions
+
+1) Pre-defined / Built-in exceptions:
+-------------------------------------------------------
+=> These exceptions are developed by Language developers and available in the Language API(collection of  Modules) and whose purpose is that to deal with Universal Problems (Invalid inputs).
+=>Some of the Universal problems are:
+	a) Division by zero   (ZeroDivisionError)
+	b) Invalid number formats (ValueError)
+	c) wrong number of parameters/arguments (TypeError)
+	d) Un-identified Variable used(NameError)
+	e) unexpected indentation    (IndentationError).....etc
+
+2) Programmer / User / Custom defined Exceptions:
+------------------------------------------------------------------------------
+=> These exceptions are developed by Language Programmers, available in project and whose purpose is that to deal with Common Problems (Invalid inputs) occuring in the project.
+=>some of the Common Problems (Invalid inputs)  are:
+	a) Attempting to enter wrong PIN in ATM based Applications .
+	b) Attempting to withdraw More Amount than existing bal in Account
+	c) Attempting enter wrong user Name and pwd...etc
+
+(Inavlid Input----->exception----->object---->exception class name)
+
+=========================================================================
+		Handling the exceptions in Python
+=========================================================================
+=>Handling the exceptions in python is a process of converting Techniccal Error messages into User-Friendly Error Messages.
+=>To do this process, we have 5 keys words in Python Language. They are
+		1) try
+		2) except
+		3) else
+		4) finally
+		5) raise
+==================================
+syntax for handling exception in python:
+==================================
+                         
+		try:
+		        Block of statements causes 
+		        problems /exceptions at Runtime
+                except <exception class name-1>:
+		        Block of statements provides
+			user-friendly error messages.
+		except <exception class name-2>:
+		        Block of statements provides
+			user-friendly error messages.
+		----------------------------------------------
+		----------------------------------------------
+		except <exception class name-n>:
+		        Block of statements provides
+			user-friendly error messages.
+		else:
+		       Block of statements executed 
+		       when exception does not occurs
+		       in try block
+		finally:
+		        Block of statements executed 
+			compulsorily irrespective exception 
+			occurs or not
+-----------------------------------------------------------------------------------------------------------
+1) try block:
+-----------------
+==>It is the block, in which we write block of statements generating the exception(s).
+      In otherwords, what are all the statements generating exceptions, those statements must be enclosed / embedded within try block. hence try block is called exception monitoring Block
+==>When the exception occurs in try block, PVM comes out of try block and executes	            appropriate except block and generates User-Friendly Error message.(If we don't write	      appropriate except block then PVM goes out of program flow and generates Technical	      Error Message.
+==>Every try block requires at least one except block (recommended to write many except	      blocks for generating multiple User-friendly error messages.)
+==>Every try block must immediately followed by except block otherwise we get Error.
+==>Once PVM comes out of try block and after exeuting appropriate except block, PVM	            control never goes to try block for executing rest of the statements.
+--------------------------------------------------------------------------------------------------------------------------------
+2) except block:-
+-----------------------
+==>It is the block, In which we write block of statements provides user-friendly error	            messages. In otherwords, except block supresses the Technical error messages and	          generates User-Freindly error Messages. Hence except block is called exception                  processing block.
+Note:-  Handling Exception=try block + except block
+
+==>except block will execute when an exception occurs in try block.
+==>Even we write multiple except blocks, PVM execute only appropriate except block	            depends on type of exception occurs in try block
+==>except block to be written after try block and before else block / finally block
+------------------------------------------------------------------------------------------------------------------------
+3) else block:
+---------------------
+==>It is the block, In which we write block of statments, which are recommended to display       the result of python program.
+=>else block will execute provided exceptions does not occurs in try block
+==>Writting else block is optional
+==>else block to be written after except block and before finally block.
+-----------------------------------------------------------------------------------------------------------------------------
+4) finally block:
+------------------------
+==>It is the block, In which we write block of statements used for relinquishing (closing/ releasing / clean-up) the resources(files,data base), which are obtained in try block.
+==>finally block will execute compulsorily irrespective exception occurs or not in try block	      (if we write)
+==>writting finally block is optional
+==>finally block to be written after else block .
+=======================================================================
+
+Steps for developing programmer-defined exceptions
+==============================================
+1) Choose the programmer-defined class name.
+2) The Programmer-defined class name must inherit from pre-defined exception class called "Exception / BaseException". hence the programmer defined class is called programmer-defined exception class.
+
+3) save this development on some file name with an extension  .py
+
+==============================================================
+	Various forms of except blocks
+==============================================================
+Note1: (displaying techincal Error message through except block)
+-------------------------------------------------------------
+try:
+    ------------------
+    -------------------
+except <exception class name>  as  ailas name:
+	print(alias name) # will display technical  error  messages
+--------------------------------------------------------------------------------------------
+Note2: (displaying Universal common message all all exception through except block)
+-----------------------------------------------------------------------------------------------------------------------------
+try:
+    ------------------
+    -------------------
+except :
+	print("some exception occured")  # will display universal / generic message
+--------------------------------------------------------------------------------------------------------------------------
+Note3: (displaying un-known exception class names through except block)
+-----------------------------------------------------------------------------------------------------------------------------
+try:
+    ------------------
+    -------------------
+except Exception as e:
+	print(e.__class__)  # will display exception class name
+	print(e)                  # will display technical  error  messages
+--------------------------------------------------------------------------------------------------------------------------
+Note4: (handling multiple specific exception with single except block)
+-----------------------------------------------------------------------------------------------------------------------------
+try:
+    ------------------
+    -------------------
+except (exception clsname-1,exception clsname-2.....exception clsname-n):
+         block of statments provides
+	 user-friendly error messages for all specific exceptions all at once
+------------------------------------------------------------------------------------------------
+==============================================================================================
+class ZeroDivisionError(Exception) :pass
+
+class InSuffFundError(Exception):pass
+
+
+PVM:
+-------
+  >>> a=10
+  >>> b=0
+  >>>c=a/b---->10/0----->How PVM comes to know It is an exception
+
+  PVM
+  ------------
+	  >>> a=10
+	  >>> b=0
+	         if (b==0):
+		       raise  ZeroDivisionError
+
+		 else:
+		       c=a/b
+		       print(c)
+============================================
+Account:
+----------------
+acbal=50000
+
+
+def     withdraw(wamt):   # wamt=10000
+             if(wamt>acbal):
+	            raise  InSuffFundError
+	           
+
+	     else:
+	          acbal=acbal-wamt  #  50000-10000= 40000

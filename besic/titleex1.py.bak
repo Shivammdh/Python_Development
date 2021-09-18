@@ -1,0 +1,5 @@
+l1=[str(x) for x in input().split(",")]
+for i in l1:
+	ans=i.title()
+	l1.append(ans)
+print(l1)

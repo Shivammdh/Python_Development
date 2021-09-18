@@ -1,0 +1,5 @@
+key, *val = input().split()
+print(key)
+print(*val)
+print(type(key))
+print(type(val))

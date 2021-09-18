@@ -1,0 +1,7 @@
+n1=1
+n2=10
+for i in range(n1,n2):
+	j=n1
+	for j in range(i):
+		print(j,end="")
+	print()

@@ -1,0 +1,7 @@
+class shivam:
+	def shdet(self):
+		print("name is:shivam")
+		print("roll no:0105ca193d53")
+		print("class :mca")
+sh=shivam()
+sh.shdet()

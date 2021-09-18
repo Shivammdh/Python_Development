@@ -1,0 +1,11 @@
+====================================
+			raise keyword:
+====================================
+=>The purpose of raise kwd is that to Hit /generate / raising /populating the exceptions, which are occuring in the python program
+=>raise kwd to always used with some conditional Evaluation
+
+=>Syntax for raise kwd:
+=====================
+              raise   exception class name
+
+===================================================================

@@ -1,0 +1,5 @@
+Q-1 WAP to chek email are valid or not if email are valid the return true otherwise return false.
+Q-2 WAP to convert base(10) Decimal number into binary number.
+Q-3 WAP to chek a string and return result in boolen True if string is Integer Number(12).if string is a float
+number(12.2) return false.
+Q-4 WAP to print only filename in files.if file name is /doc/programming . it will print only "doc programming". 

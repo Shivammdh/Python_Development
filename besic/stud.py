@@ -1,0 +1,11 @@
+#stud.py
+sno=int(input("enter student number:"))
+sname=input("enter student name:")
+smarks=float(input("enter student marks:"))
+sclg=input("enter student college name:")
+print("*"*40)
+print("Student number={}".format(sno))
+print("Student name={}".format(sname))
+print("Student marks is={}".format(smarks))
+print("Student collage name is={}".format(sclg))
+print("*"*40)

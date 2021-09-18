@@ -1,0 +1,10 @@
+import pywhatkit
+  
+# using Exception Handling
+# to avoid exceptions
+try:
+    pywhatkit.text_to_handwriting("I am shivam sharma,....",rgb=(0,0,255))
+    print("writing...")
+  
+except:
+    print("Network Error Occured")
